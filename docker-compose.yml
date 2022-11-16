@@ -24,7 +24,7 @@ services:
   db:
     image: postgres:13-alpine
     volumes:
-      - dev-db-data_new:/var/lib/postgresql/data
+      - dev-db-data:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=devdbuser
       - POSTGRES_USER=devuser1
@@ -32,5 +32,5 @@ services:
 
 
 volumes:
-  dev-db-data_new:
+  dev-db-data:
 
